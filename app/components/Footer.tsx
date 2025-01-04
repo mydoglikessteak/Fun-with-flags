@@ -8,3 +8,5 @@ const Footer = () =>{
 }
 
 export default Footer;
+
+// na duvida sempre le a documentação do tailwind do componente

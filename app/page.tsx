@@ -1,10 +1,10 @@
-import {Footer,Header} from "./components/index"
+import {Card,Footer,Header} from "./components/index"
 export default function Home() {
   return (   
     <>
     <Header />
     <main className="flex-1">
-      this is the main
+      <Card />
     </main>
    <Footer />
     </>
