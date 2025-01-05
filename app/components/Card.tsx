@@ -1,6 +1,17 @@
-const Card = ({ country, capital, regiao, populaçao }) => {
+type CardProps = {
+  id: number;
+  country: string;
+  capital: string;
+  regiao: string;
+  populaçao: string;
+};
+
+const Card = ({ id, country, capital, regiao, populaçao }): CardProps => {
   return (
-    <div className="h-full overflow-hidden bg-white rounded-lg shadow-lg">
+    <div
+      id={id.toString()}
+      className="h-full overflow-hidden bg-white rounded-lg shadow-lg"
+    >
       <div className="aspect-video w-full">
         <img
           src=" https://placehold.co/600x400"
@@ -8,7 +19,6 @@ const Card = ({ country, capital, regiao, populaçao }) => {
           className="w-full h-full object-cover"
         />
       </div>
-
       <div className="p-6 text-sm text-gray-600">
         <h2 className="text-xl font-semibold mb-4">{country}</h2>
         <div className="space-y-2 ">
@@ -31,3 +41,5 @@ const Card = ({ country, capital, regiao, populaçao }) => {
 };
 
 export default Card;
+
+//pra começar npm run dev
